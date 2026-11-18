@@ -1,0 +1,76 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Virtual environments =====
+venv/
+.venv/
+env/
+ENV/
+vr_env/
+*_env/
+
+# ===== Secrets =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Model weights & large files =====
+models/*
+!models/README.md
+*.pt
+*.pth
+*.onnx
+*.bin
+*.gguf
+*.safetensors
+checkpoints/
+
+# ===== Datasets / audio =====
+data/evaluation/
+data/knowledge_base/qdrant_db/
+!data/README.md
+!data/samples/
+*.wav
+*.mp3
+*.flac
+data/samples/*.wav
+
+# ===== Experiment outputs / logs =====
+experiments/*.log
+logs/
+*.log
+wandb/
+mlruns/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Docker =====
+*.pid
+
+# ===== Misc =====
+*.tmp
+*.bak
+
+# ===== Commands =====
+commands.txt
